@@ -24,8 +24,8 @@ const App = () => {
  return (
     <div class="parent">
         {/* Do not remove the main div */}
-        <div id="barInner"></div>
-        <div id="barOuter" style={{width:`${per}%`}}></div>
+        <p id="barInner"></p>
+        <p id="barOuter" style={{width:`${per}%`}}></p>
 
     </div>
   )
