@@ -5,14 +5,15 @@ import "./../styles/App.css";
 const App = () => {
   const [per, setPer] = useState(0);
 
-  useEffect(() => {
+  useEffect(() => { 
     const interval = setInterval(() => {
+      
       setPer(prev => {
         if (prev >= 100) {
           clearInterval(interval);
           return 100;
         }
-        return prev + 10;
+        return (prev) + 10;
       });
     }, 1000);
 
